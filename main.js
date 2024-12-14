@@ -2,9 +2,9 @@ const portfolioBoxes = document.querySelectorAll('.portfolio-box');
 const socialLinks = document.querySelectorAll('.social a');
 
 function openLink(element) {
-    const link = element.getAttribute('data-link'); // Отримуємо URL з атрибута data-link
+    const link = element.getAttribute('data-link');
     if (link) {
-        window.open(link, '_blank'); // Відкриваємо посилання у новій вкладці
+        window.open(link, '_blank');
     }
 }
 
@@ -16,7 +16,7 @@ portfolioBoxes.forEach(box => {
 
 socialLinks.forEach(link => {
     link.addEventListener('click', (e) => {
-        e.preventDefault(); // Запобігаємо стандартній поведінці <a>
+        e.preventDefault();
         openLink(link);
     });
 });
@@ -32,20 +32,6 @@ window.onscroll = () => {
   navbar.classList.remove("open-menu");
   menu.classList.remove("move");
 };
-
-// Reviews Swiper
-var swiper = new Swiper(".reviews-content", {
-  spaceBetween: 30,
-  centeredSlides: true,
-  autoplay: {
-    delay: 5000,
-    disableOnInteraction: true,
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-});
 
 // Use Live Server To Work The Form
 // Email JSbx bx-link-alt
@@ -69,7 +55,7 @@ validate();
 
 function sendmail(name, email, msg) {
   // User Your Service id and template id here
-  emailjs.send("service_olkdqmy", "template_n59m5oj", {
+  emailjs.send("service_olkdqmy","template_n59m5oj", {
     from_name: email,
     to_name: name,
     message: msg,
@@ -86,7 +72,7 @@ function emptyerror() {
 function success() {
   swal({
     title: "Email sent successfully",
-    text: "We try to reply in 24 hours",
+    text: "I already answered you :)",
     icon: "success",
   });
 }
