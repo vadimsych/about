@@ -1,11 +1,23 @@
 const portfolioBoxes = document.querySelectorAll('.portfolio-box');
+const socialLinks = document.querySelectorAll('.social a');
+
+function openLink(element) {
+    const link = element.getAttribute('data-link'); // Отримуємо URL з атрибута data-link
+    if (link) {
+        window.open(link, '_blank'); // Відкриваємо посилання у новій вкладці
+    }
+}
 
 portfolioBoxes.forEach(box => {
     box.addEventListener('click', () => {
-        const link = box.getAttribute('data-link'); // Отримуємо URL з атрибута data-link
-        if (link) {
-            window.open(link, '_blank'); // Відкриваємо посилання у новій вкладці
-        }
+        openLink(box);
+    });
+});
+
+socialLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+        e.preventDefault(); // Запобігаємо стандартній поведінці <a>
+        openLink(link);
     });
 });
 
@@ -57,7 +69,7 @@ validate();
 
 function sendmail(name, email, msg) {
   // User Your Service id and template id here
-  emailjs.send("service_id", "template_id", {
+  emailjs.send("service_olkdqmy", "template_n59m5oj", {
     from_name: email,
     to_name: name,
     message: msg,
