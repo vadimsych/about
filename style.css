@@ -17,11 +17,11 @@ Description: Explore Andrew, a responsive HTML portfolio template designed for s
 }
 /* Variables */
 :root{
-  --main-color:#d43e22;
+  --main-color:#7242e7;
   --body-color:#212121;
-  --container-color:#262626;
+  --container-color:#7242e7;
   --heading-color:#fff;
-  --heading-color_second:#017cfa;
+  --heading-color_second:#e88b06;
   --box-color:#262626;
   --bg-color:#fff;
 }
@@ -88,7 +88,7 @@ header{
   color: var(--bg-color);
 }
 .nav-link:hover{
-  color: var(--main-color);
+  color: var(--heading-color);
   background: var(--container-color);
   transition: 0.3s all linear;
 }
@@ -256,7 +256,7 @@ header{
   font-size: 1.2rem;
 }
 .btn:hover{
-  background: #546eff;
+  background: #e88b06;
   transition: 0.3s all linear;
 }
 .about-text p{
@@ -330,7 +330,7 @@ header{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: hsl(9,16%,50%,0.8);
+  background: hsl(34,95%,46%,0.5);
 }
 .portfolio-overlay h2{
   font-size: 1.6rem;
@@ -345,7 +345,7 @@ header{
   border-radius: 4px;
 }
 .portfolio-overlay .bx:hover{
-  background: #546eff;
+  background: #e88b06;
   transition: 0.3s all linear;
 }
 .portfolio-box:hover .portfolio-overlay{
@@ -462,7 +462,7 @@ header{
   cursor: pointer;
 }
 .contact-form .send-btn:hover{
-  background: #546eff;
+  background: #e88b06;
   transition: 0.3s all linear;
 }
 /* Footer */
