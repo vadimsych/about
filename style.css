@@ -330,7 +330,7 @@ header{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: hsl(34,95%,46%,0.5);
+  background: hsl(270, 95%, 46%, 0.5);
 }
 .portfolio-overlay h2{
   font-size: 1.6rem;
